@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "statistics",
+  "version": "${version}",
+
+  "name": "Statistics",
+  "description": "Tracks each player's blocks mined and placed, storing the data in an SQLite database. Includes admin controls and /statistics commands.",
+  "authors": [
+    "ProjectPersistence"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ProjectPersistence",
+    "sources": "https://github.com/ProjectPersistence/statistics"
+  },
+
+  "license": "MIT",
+
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.projectpersistence.statistics.Statistics"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "fabric-api": ">=${fabric_version}"
+  },
+
+  "custom": {
+    "credits": "Developed by ProjectPersistence - https://github.com/ProjectPersistence"
+  }
+
+}
